@@ -1,0 +1,508 @@
+@media all and (max-width: 480px) {
+
+	body, body > header, body > section {
+	width: 100%;
+}
+
+#d24136:red
+#eb8a3e:orange
+#ebb582：薄オレンジ
+#8b4513:茶色
+
+
+
+.clearfix:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+nav{
+	width: 100%;
+	height: 30px;
+	position: fixed;
+	z-index: 999;
+	background-color: white;
+}
+
+
+.fa{
+	padding-right: 0.3em;
+}
+
+nav .logo{
+	width: 40%;
+	height: 100%;
+	float: left;
+	margin-left: 3px;
+}
+
+header img{
+	width: 60%;
+	height:30px;
+}
+
+img.mark{
+	height: auto;
+	width: 20%;
+	height: 30px;
+}
+
+
+
+
+nav ul{
+	width: 100%;
+	height: 30px;
+	margin:5px;
+}
+nav .menu{
+	float: right;
+	width: 60%;
+}
+
+header{
+	width: 100%;
+	height: 30px;
+	overflow: hidden;
+}
+
+nav li{
+	float: left;
+	margin: 3px ;
+	font-size: 13px;
+}
+
+
+nav li a{
+	text-decoration: none;
+	color: gray;
+	transition: 0.2s linear 0s;}
+
+nav li a:hover{
+	color: #d24136;
+	text-shadow: 1px -1px 2px #2a3132 ;
+}
+
+	section{
+		width: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		overflow: hidden;
+	}
+
+ section#box1{
+	background-image: url("../img/チェスキー.jpg");
+	margin-top: -50px;
+	padding-top: 50px;
+	z-index: 13;
+	height: 400px;
+	position: relative;
+
+	}
+
+		#box1 h1{
+			font-family: 'Ubuntu', sans-serif;
+			font-size: 40px;
+			left: 20%;
+			color: white;
+			display: none;
+			position: absolute;
+			left: 0;
+			top:-70px;
+			right: 0;
+			bottom: 0;
+			margin:auto;
+			width: 300px;
+			height: 150px;
+			}
+		#box1 h2{
+			width: 200px;
+			height: 30px;
+			text-align: center;
+			font-family: 'Ubuntu', sans-serif;
+			color: white;
+			font-size: 30px;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			margin:auto;
+			display: none;
+			position: absolute;
+			}
+
+		.tiger{width: 180px;
+				height: 130px;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				margin:auto;
+				display: none;
+				position: absolute;}
+		#box1 h3{
+			text-align: right;
+			font-family: 'Ubuntu', sans-serif;
+			color: white;
+			font-size: 13px;
+			position: absolute;
+			}
+
+		#box1 h4{
+			font-family: 'Ubuntu', sans-serif;
+			color: white;
+			font-size: 50px;
+			position: absolute;
+			left: 300px;
+			display: none;
+			}
+
+.clear{
+	clear: both;
+}
+
+#box2{
+	background-image: url("../img/DSC_2006.JPG");
+	position: relative;
+	height: 600px;
+	margin-top: -15px;
+	padding-top: 15px;
+	z-index: 11;
+}
+
+	.kodomo {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background-color: rgba(255, 255, 255, 0.6);
+		margin-top: -15px;
+		padding-top: 15px;
+}
+
+	#box2 .inner{
+		height: auto;
+		width: 100%;
+  		left: 0;
+  		right: 0;
+  		margin:auto;
+		position: absolute;
+		font-size: 0;
+		padding-top:15px
+	}
+
+	.title {
+    	color: white;
+    	font-size: 50px;
+    	font-weight: bold;
+    	text-shadow: 2px 2px 2px #d24136,
+    	-4px 4px 2px #d24136,
+    	4px -4px 2px #d24136,
+    	-4px -4px 2px #d24136;
+    	text-align: center;
+    	padding-top: 15px;
+	}
+
+	.circle{
+		margin-left: 15px;
+		width: 50px;
+		height: 50px;
+	}
+
+	.main{
+		display: inline-block;
+		width: 100%;
+		height: 230px;
+		box-sizing: border-box;
+		margin-left: 25px;
+		}
+	#box2 .main article{
+		text-align: center;
+		width: 100px;
+		height:10em;
+		overflow: hidden;
+		font-size: 3px;
+		background-color: #ebb582;
+		font-family: "Sawarabi Mincho";
+		padding:3px;
+		box-sizing: border-box;
+		visibility: hidden;
+
+
+	}
+
+	#box2 article h2{
+		font-size: 7px;
+		padding: 3px;
+		color: #8b4513;
+		font-family: "Sawarabi Gothic";
+
+	}
+	article p{
+		line-height: 7px;
+		font-size: 5px;
+		color: black;
+	}
+	u{
+		color: #8b4513;
+	}
+
+	#box2 .circle:hover{
+		opacity: 0.7;
+		transform: translateY(-7px) scale(1.1);
+	}
+
+	#box2 img:hover + article{
+		visibility: visible;
+		animation: anime1 1s  alternate;
+	}
+
+	@keyframes anime1 {
+		0% {transform: scale(0,0); ,opacity: 0.0;}
+		100% {transform: scale(1,1);, opacity: 1.0;}
+		}
+
+	#box2 .date{
+		width: 100%;
+		height: 100px;
+		margin:0 auto 50px;
+		box-sizing: border-box;
+		background-color: #ebb582;
+		border: 10px #8b4513 solid;
+	}
+	#box2 .main_img{
+		width: 30px;
+		height: 30px;
+		margin:5px;
+		box-sizing: border-box;
+		display: inline-block;
+		float: left;
+	}
+
+	#box2 .date article{
+		width: 100%;
+		height: 100px;
+		font-family: "Sawarabi Mincho";
+		color: black;
+		margin: 2px;
+		display: inline-block;
+	}
+
+	#box2 .date article p{
+		line-height: 9px;
+		margin-top:2px;
+		font-size: 5px;
+	}
+
+#box3{
+	height: 650px;
+	margin-top: -50px;
+	padding-top: 50px;
+	background-color: #8b4513;
+	z-index: 2;
+
+	}
+
+	#box3 .container{
+		width: 1200px;
+		height: 700px;
+		margin: 0 auto;
+		z-index: 15;
+			position: relative;
+	}
+
+	#box3 .article{
+		width: 500px;
+		height: 140px;
+		padding: 35px 35px;
+		background-image: url("../img/color.jpg");
+		position: absolute;
+		top: 155px;
+		left: 350px;
+		box-sizing: border-box;
+		opacity: 0;
+		transition: 0.5s linear 0s;
+	}
+
+	#box3 p{
+		line-height: 20px;
+		font-size: 15px;
+		font-family: "Sawarabi Mincho";
+		color: black;
+	}
+
+	canvas{
+		height:780px;
+		width: 100%;
+		z-index: 1;
+		position: absolute;
+	}
+
+	.total{
+		width: 1200px;
+  		height: 450px;
+  		position: relative;
+  		margin:50px auto 0;
+  		box-sizing: border-box;
+	}
+	.box{
+		position: absolute;
+  		width: 300px;
+  		height: 150px;
+  		box-sizing: border-box;
+  		transition-duration: 4s;
+  	}
+
+  	.img1{
+  		top: 150px;
+  	}
+
+  	#box3 .img1:hover + .num1{
+  		opacity: 1;
+  	}
+
+
+  	.img2{
+  		left: 450px;
+  		top: 150px;
+  	}
+
+  	#box3 .img2:hover + .num2{
+  		opacity: 1;
+  	}
+
+  	.img3{
+  		left: 900px;
+  		top: 150px;
+}
+	#box3 .img3:hover + .num3{
+  		opacity: 1;
+  	}
+
+  	.img4{
+  		left: 200px;
+  		top: 150px;
+  	}
+  	#box3 .img4:hover + .num4{
+  		opacity: 1;
+  	}
+
+  	.img5{
+  		left: 700px;
+  		top: 150px;
+
+  	}
+
+  	#box3 .img5:hover + .num5{
+  		opacity: 1;
+  	}
+
+  	.img1.motion,.img2.motion,.img3.motion{
+    transform: translateY(-150px);
+}
+	.img4.action,.img5.action{
+	transform: translateY(150px);
+	}
+
+
+
+	#box3 img:hover{
+		opacity: 0.4;
+	}
+
+
+
+#border{
+	background-image: url("../img/border.jpg");
+	height: 140px;
+	width: 100%;
+	box-sizing: border-box;
+	z-index: 0;
+}
+
+
+
+#box4{
+	background-color: 	#ebb582;
+	height: 580px;
+	margin-top: -50px;
+	padding-top: 50px;
+	z-index: 9;
+	}
+
+.image{
+	margin: 0 auto;
+	width: 1000px;
+	height: 490px;
+	font-size: 0;
+}
+
+.imagebox{
+	width: 200px;
+	height: 200px;
+	margin-left: 40px;
+	margin-top: 40px;
+	box-sizing: border-box;
+	border: 10px #8b4513 solid;
+	overflow: hidden;
+	display: inline-block;
+	position: relative;
+
+}
+
+.image a img{
+	width: 180px;
+	height: 180px;
+	overflow: hidden;
+}
+
+
+
+
+.image a img{
+	transition:3s linear;
+}
+
+.imagebox:hover{
+	opacity: 0.5;
+}
+
+.image a img:hover {
+transform: scale(1.2,1.2) rotate(5deg);
+}
+
+
+footer{
+	height: 300px;
+	background-image: url("../img/footer.jpg");
+	box-sizing: border-box;
+}
+
+footer ul{
+	margin:  auto;
+	width: 600px;
+	text-align: center;
+	padding-top: 230px;
+}
+
+footer li{
+	font-size: 40px;
+	display: inline-block;
+	font-family: 'Ubuntu', sans-serif;
+	color: #ebb582;
+	text-align: center;
+
+}
+
+
+footer li a{
+	text-decoration: none;
+	color:#ebb582;
+	transition: 0.2s linear 0s;
+	}
+
+footer li a i:hover{
+	color: #eb8a3e;
+}
+
+}
