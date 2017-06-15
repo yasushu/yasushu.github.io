@@ -198,7 +198,7 @@ $(function(){
 
 	$( '#menu-button' ).click( function()
 {
-	
+
 	$( '#menu-target' ).slideToggle() ;
 
 } ) ;
