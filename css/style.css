@@ -23,6 +23,11 @@ nav{
 	background-color: white;
 }
 
+.menu_button ,.menu-content{
+	display: none;
+}
+
+
 
 .fa{
 	padding-right: 0.3em;
@@ -81,8 +86,8 @@ nav li a:hover{
 
  section#box1{
 	background-image: url("../img/チェスキー.jpg");
-	margin-top: -50px;
-	padding-top: 50px;
+	margin-top: -60px;
+	padding-top: 60px;
 	z-index: 13;
 	height: 700px;
 
@@ -105,6 +110,7 @@ nav li a:hover{
 			float: right;
 			display: none;
 			position: relative;
+			color: yellow;
 			}
 
 		.tiger{width: 550px;
@@ -138,8 +144,8 @@ nav li a:hover{
 	background-image: url("../img/DSC_2006.JPG");
 	position: relative;
 	height: 1000px;
-	margin-top: -50px;
-	padding-top: 50px;
+	margin-top: -60px;
+	padding-top: 60px;
 	z-index: 11;
 }
 
@@ -177,7 +183,7 @@ nav li a:hover{
 	}
 
 	.circle{
-		margin-left: 50px;
+		margin-left:50px;
 	}
 
 	.main{
@@ -268,8 +274,8 @@ nav li a:hover{
 
 #box3{
 	height: 650px;
-	margin-top: -50px;
-	padding-top: 50px;
+	margin-top: -60px;
+	padding-top: 60px;
 	background-color: #8b4513;
 	z-index: 2;
 
@@ -383,22 +389,27 @@ nav li a:hover{
 	}
 
 
-
 #border{
-	background-image: url("../img/border.jpg");
-	height: 140px;
 	width: 100%;
-	box-sizing: border-box;
-	z-index: 0;
+	height: 140px;
+	background-color: #ebb582;
 }
 
+.half{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	background-color: #8b4513;
+	border-radius: 0 0 50% 50%;
+	z-index: 10;
+}
 
 
 #box4{
 	background-color: 	#ebb582;
 	height: 580px;
-	margin-top: -50px;
-	padding-top: 50px;
+	margin-top: -60px;
+	padding-top: 60px;
 	z-index: 9;
 	}
 
@@ -409,25 +420,13 @@ nav li a:hover{
 	font-size: 0;
 }
 
-.imagebox{
-	width: 200px;
-	height: 200px;
-	margin-left: 40px;
-	margin-top: 40px;
-	box-sizing: border-box;
-	border: 10px #8b4513 solid;
-	overflow: hidden;
-	display: inline-block;
-	position: relative;
 
-}
 
 .image a img{
 	width: 180px;
 	height: 180px;
 	overflow: hidden;
 }
-
 
 
 
@@ -442,6 +441,18 @@ nav li a:hover{
 .image a img:hover {
 transform: scale(1.2,1.2) rotate(5deg);
 }
+
+
+.swiper-slide {
+    width: 200px !important;
+	height: 200px;
+	margin-top: 30px;
+	margin-left: 40px;
+	box-sizing: border-box;
+	border: 10px #8b4513 solid;
+	overflow: hidden;
+	display: inline-block !important;
+	position: relative;}
 
 
 footer{
@@ -476,4 +487,5 @@ footer li a{
 footer li a i:hover{
 	color: #eb8a3e;
 }
+
 

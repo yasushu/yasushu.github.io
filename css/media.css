@@ -1,13 +1,4 @@
-@media all and (max-width: 480px) {
-
-	body, body > header, body > section {
-	width: 100%;
-}
-
-#d24136:red
-#eb8a3e:orange
-#ebb582：薄オレンジ
-#8b4513:茶色
+@media all and (max-width: 480px){
 
 
 
@@ -19,10 +10,47 @@
 
 nav{
 	width: 100%;
-	height: 30px;
+	height: 40px;
 	position: fixed;
 	z-index: 999;
 	background-color: white;
+}
+
+.menu_button{
+	width: 32px;
+	height: 32px;
+	box-sizing: border-box;
+	display: block;
+	margin-top: 4px;
+	margin-right: 10px;
+	float: right;
+}
+	.menu-content
+{
+	width: 25%;
+	height: 200px ;
+	background: #D36015 ;
+	position: absolute;
+	top: 40px;
+	right:0;
+	background-color: #d24136;
+}
+
+nav li{
+	width: 100%;
+	border-bottom: 3px white;
+	text-align: center;
+}
+
+
+nav li a{
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+	}
+
+nav li a:hover{
+	color: gray;
 }
 
 
@@ -31,35 +59,28 @@ nav{
 }
 
 nav .logo{
-	width: 40%;
+	width: 70%;
 	height: 100%;
 	float: left;
 	margin-left: 3px;
+	box-sizing: border-box;
 }
 
 header img{
-	width: 60%;
-	height:30px;
+	width: 70%;
+	height:40px;
 }
 
 img.mark{
-	height: auto;
-	width: 20%;
-	height: 30px;
+	width: 25%;
+	height: 40px;
 }
 
 
-
-
-nav ul{
-	width: 100%;
-	height: 30px;
-	margin:5px;
-}
 nav .menu{
-	float: right;
-	width: 60%;
+	display: none;
 }
+
 
 header{
 	width: 100%;
@@ -67,28 +88,13 @@ header{
 	overflow: hidden;
 }
 
-nav li{
-	float: left;
-	margin: 3px ;
-	font-size: 13px;
-}
-
-
-nav li a{
-	text-decoration: none;
-	color: gray;
-	transition: 0.2s linear 0s;}
-
-nav li a:hover{
-	color: #d24136;
-	text-shadow: 1px -1px 2px #2a3132 ;
-}
 
 	section{
 		width: 100%;
 		background-repeat: no-repeat;
 		background-size: cover;
 		overflow: hidden;
+		box-sizing: border-box;
 	}
 
  section#box1{
@@ -96,7 +102,7 @@ nav li a:hover{
 	margin-top: -50px;
 	padding-top: 50px;
 	z-index: 13;
-	height: 400px;
+	height: 450px;
 	position: relative;
 
 	}
@@ -124,7 +130,7 @@ nav li a:hover{
 			color: white;
 			font-size: 30px;
 			left: 0;
-			top: 0;
+			top: 50px;
 			right: 0;
 			bottom: 0;
 			margin:auto;
@@ -136,7 +142,7 @@ nav li a:hover{
 				height: 130px;
 				left: 0;
 				right: 0;
-				top: 0;
+				top: 200px;
 				bottom: 0;
 				margin:auto;
 				display: none;
@@ -147,6 +153,7 @@ nav li a:hover{
 			color: white;
 			font-size: 13px;
 			position: absolute;
+			bottom: 30px;
 			}
 
 		#box1 h4{
@@ -165,10 +172,11 @@ nav li a:hover{
 #box2{
 	background-image: url("../img/DSC_2006.JPG");
 	position: relative;
-	height: 600px;
-	margin-top: -15px;
-	padding-top: 15px;
+	height: 2150px;
+	margin-top: -40px;
+	padding-top: 40px;
 	z-index: 11;
+	box-sizing: border-box;
 }
 
 	.kodomo {
@@ -176,8 +184,6 @@ nav li a:hover{
 		height: 100%;
 		position: absolute;
 		background-color: rgba(255, 255, 255, 0.6);
-		margin-top: -15px;
-		padding-top: 15px;
 }
 
 	#box2 .inner{
@@ -185,10 +191,9 @@ nav li a:hover{
 		width: 100%;
   		left: 0;
   		right: 0;
-  		margin:auto;
 		position: absolute;
 		font-size: 0;
-		padding-top:15px
+		padding:0;
 	}
 
 	.title {
@@ -204,43 +209,42 @@ nav li a:hover{
 	}
 
 	.circle{
-		margin-left: 15px;
-		width: 50px;
-		height: 50px;
+		width: 50%;
+		height: 21%;
+		margin-left:25%;
+		box-sizing: border-box;
 	}
 
 	.main{
-		display: inline-block;
 		width: 100%;
-		height: 230px;
-		box-sizing: border-box;
-		margin-left: 25px;
-		}
+		height: auto;
+		margin: 10px auto;
+	}
 	#box2 .main article{
 		text-align: center;
-		width: 100px;
-		height:10em;
+		width: 80%;
+		height: 40%;
 		overflow: hidden;
-		font-size: 3px;
 		background-color: #ebb582;
 		font-family: "Sawarabi Mincho";
 		padding:3px;
+		margin: 0 auto;
 		box-sizing: border-box;
-		visibility: hidden;
+		visibility: visible;
 
 
 	}
 
 	#box2 article h2{
-		font-size: 7px;
+		font-size: 20px;
 		padding: 3px;
 		color: #8b4513;
 		font-family: "Sawarabi Gothic";
 
 	}
 	article p{
-		line-height: 7px;
-		font-size: 5px;
+		line-height: 20px;
+		font-size: 15px;
 		color: black;
 	}
 	u{
@@ -263,25 +267,20 @@ nav li a:hover{
 		}
 
 	#box2 .date{
-		width: 100%;
-		height: 100px;
-		margin:0 auto 50px;
-		box-sizing: border-box;
-		background-color: #ebb582;
-		border: 10px #8b4513 solid;
+		width: 80%;
+		height: auto;
 	}
 	#box2 .main_img{
-		width: 30px;
-		height: 30px;
-		margin:5px;
+		width: 100%;
+		margin: 0;
+		height: auto;
 		box-sizing: border-box;
 		display: inline-block;
-		float: left;
 	}
 
 	#box2 .date article{
 		width: 100%;
-		height: 100px;
+		height: auto;
 		font-family: "Sawarabi Mincho";
 		color: black;
 		margin: 2px;
@@ -289,120 +288,81 @@ nav li a:hover{
 	}
 
 	#box2 .date article p{
-		line-height: 9px;
+		line-height: 20px;
 		margin-top:2px;
-		font-size: 5px;
+		font-size: 15px;
 	}
 
 #box3{
-	height: 650px;
-	margin-top: -50px;
-	padding-top: 50px;
+	height: 800px;
+	margin-top: -40px;
+	padding-top: 40px;
 	background-color: #8b4513;
 	z-index: 2;
 
 	}
 
 	#box3 .container{
-		width: 1200px;
-		height: 700px;
+		width: 100%;
+		height: auto;
 		margin: 0 auto;
 		z-index: 15;
 			position: relative;
 	}
 
 	#box3 .article{
-		width: 500px;
-		height: 140px;
-		padding: 35px 35px;
-		background-image: url("../img/color.jpg");
-		position: absolute;
-		top: 155px;
-		left: 350px;
-		box-sizing: border-box;
-		opacity: 0;
-		transition: 0.5s linear 0s;
+		display: none;}
+
+	#box3 img{
+		width: 80%;
+		height: 100%;
+		margin-left: 12.3%;
+		margin-top: 20px;
 	}
 
-	#box3 p{
-		line-height: 20px;
-		font-size: 15px;
-		font-family: "Sawarabi Mincho";
-		color: black;
-	}
-
-	canvas{
-		height:780px;
-		width: 100%;
-		z-index: 1;
-		position: absolute;
-	}
 
 	.total{
-		width: 1200px;
-  		height: 450px;
+		width: 100%;
+  		height: auto;
   		position: relative;
-  		margin:50px auto 0;
+  		margin: 0;
   		box-sizing: border-box;
+  		z-index: 16;
 	}
 	.box{
-		position: absolute;
-  		width: 300px;
-  		height: 150px;
+		position: static;
+  		width: 80%;
+  		height: 24%;
+  		margin: 0 auto;
   		box-sizing: border-box;
   		transition-duration: 4s;
   	}
 
-  	.img1{
-  		top: 150px;
-  	}
 
   	#box3 .img1:hover + .num1{
   		opacity: 1;
   	}
 
 
-  	.img2{
-  		left: 450px;
-  		top: 150px;
-  	}
-
   	#box3 .img2:hover + .num2{
   		opacity: 1;
   	}
 
-  	.img3{
-  		left: 900px;
-  		top: 150px;
-}
 	#box3 .img3:hover + .num3{
   		opacity: 1;
   	}
 
-  	.img4{
-  		left: 200px;
-  		top: 150px;
-  	}
   	#box3 .img4:hover + .num4{
   		opacity: 1;
-  	}
-
-  	.img5{
-  		left: 700px;
-  		top: 150px;
-
   	}
 
   	#box3 .img5:hover + .num5{
   		opacity: 1;
   	}
 
-  	.img1.motion,.img2.motion,.img3.motion{
-    transform: translateY(-150px);
+  	.img1.motion,.img2.motion,.img3.motion,.img4.action,.img5.action{
+    transform: translateY(20px);
 }
-	.img4.action,.img5.action{
-	transform: translateY(150px);
-	}
 
 
 
@@ -424,35 +384,44 @@ nav li a:hover{
 
 #box4{
 	background-color: 	#ebb582;
-	height: 580px;
-	margin-top: -50px;
-	padding-top: 50px;
+	height: 448px;
+	margin-top: -40px;
+	padding-top: 40px;
 	z-index: 9;
 	}
 
 .image{
 	margin: 0 auto;
-	width: 1000px;
-	height: 490px;
+	width: 100%;
+	height: 100%;
 	font-size: 0;
 }
 
-.imagebox{
-	width: 200px;
-	height: 200px;
-	margin-left: 40px;
-	margin-top: 40px;
+.image img{
+}
+
+.swiper-container{
+	width: 70%;
+	height: 70%;
+	margin-top: 10%;
+}
+
+.swiper-slide {
+    width: 100% !important;
+	height: 100%;
+	margin: 0;
 	box-sizing: border-box;
 	border: 10px #8b4513 solid;
 	overflow: hidden;
-	display: inline-block;
-	position: relative;
+	display: inline-block!important ;
+	position: relative;}
 
-}
+
+
 
 .image a img{
-	width: 180px;
-	height: 180px;
+	width: 100%;
+	height: 100%;
 	overflow: hidden;
 }
 
@@ -474,19 +443,20 @@ transform: scale(1.2,1.2) rotate(5deg);
 
 footer{
 	height: 300px;
+	width: 100%;
 	background-image: url("../img/footer.jpg");
 	box-sizing: border-box;
 }
 
 footer ul{
 	margin:  auto;
-	width: 600px;
+	width: 320px;
 	text-align: center;
 	padding-top: 230px;
 }
 
 footer li{
-	font-size: 40px;
+	font-size: 25px;
 	display: inline-block;
 	font-family: 'Ubuntu', sans-serif;
 	color: #ebb582;
@@ -504,5 +474,11 @@ footer li a{
 footer li a i:hover{
 	color: #eb8a3e;
 }
+
+
+
+
+
+
 
 }

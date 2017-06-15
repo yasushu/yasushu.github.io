@@ -176,6 +176,9 @@ $(function(){
 
 		},{offset: 300});
 
+
+	var fadeSpeed = 1500;
+
 	$('section#box4').find('.imagebox').hide();
 
 	$('section#box4').waypoint(function(direction){
@@ -192,6 +195,13 @@ $(function(){
 		}
 
 		},{offset: 100});
+
+	$( '#menu-button' ).click( function()
+{
+	
+	$( '#menu-target' ).slideToggle() ;
+
+} ) ;
 
 
 });
