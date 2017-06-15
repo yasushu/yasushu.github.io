@@ -8,11 +8,14 @@
 	<title>Be somebody</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
- <link rel="stylesheet" href="css/media.css" type="text/css" media="screen and (max-width:480px)">
+<link rel="stylesheet" href="css/media.css" type="text/css" media="screen and (max-width:480px)">
+<link rel="stylesheet" href="css/swiper.css"  media="screen and (max-width:480px)">
+
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/earlyaccess/sawarabigothic.css" rel="stylesheet" />
+
 
 
 </head>
@@ -20,9 +23,15 @@
 <header>
 <nav>
 <div class="logo"><img class="mark" src="img/ロゴ.jpg"><img src="img/名称未設定 2.png"></div>
-<div class="menu">
-	<ul>
-	<li><a href="#box1"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+	<a id="menu-button" class="menu-button"><img src="img/menu.png" class="menu_button"></img></a>
+	<ul id="menu-target" class="menu-content">
+		<li><a href="#box1"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+		<li><a href="#box2"><i class="fa fa-id-card " aria-hidden="true"></i>Profile</a></li>
+		<li><a href="#box3"><i class="fa fa-star" aria-hidden="true"></i>Event</a></li>
+		<li><a href="#box4"><i class="fa fa-camera " aria-hidden="true"></i>Picture</a></li>
+	</ul>
+	<ul class ="menu">
+		<li><a href="#box1"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
 		<li><a href="#box2"><i class="fa fa-id-card " aria-hidden="true"></i>Profile</a></li>
 		<li><a href="#box3"><i class="fa fa-star" aria-hidden="true"></i>Event</a></li>
 		<li><a href="#box4"><i class="fa fa-camera " aria-hidden="true"></i>Picture</a></li>
@@ -49,7 +58,7 @@
 						<article><u><p>1996年12月27日うまれ。</p>
 						<p>神奈川県で高校までの少年時代を謳歌する。</p>
 						<p>「おじいちゃんになってからでは楽しめないこと」をコンセプトに大学生活を過ごす。</p>
-						<p>わくわくすることを好きなだけ。</p></u></article>
+						<p>現在はシェアハウスで生活中。</p></u></article>
 
 					</div>
 					<div class="main">
@@ -110,8 +119,6 @@
 				</div>
 					</div>
 
-
-
 </section>
 <section id="box3" class="particles" >
 <div class="container">
@@ -122,7 +129,7 @@
 
 
 					<div class="box img2"><a href="#"><img src="img/富士登山.jpg"></a></div>
-							<div class="article num2"><u><p>富士山に１合目からチャレンジ。朝4時、富士山頂駅から軽快に歩き始める。「ポケモＧＯ」を片手に、走り回る少年を横目に手持ちのポケモンもいなければＧＯする気力すらない自分に不甲斐なさを感じる。「砂漠ではダイヤよりも水の方が貴重です。」一本５００円の水を前にこの言葉の意味を肌で痛感する</p></u></div>
+							<div class="article num2"><u><p>富士山に１合目からチャレンジ。朝4時、富士山頂駅から軽快に歩き始める。「ポケモンＧＯ」を片手に、走り回る少年を横目に手持ちのポケモンもいなければＧＯする気力すらない自分に不甲斐なさを感じる。「砂漠ではダイヤよりも水の方が貴重です。」一本５００円の水を前にこの言葉の意味を肌で痛感する</p></u></div>
 
 
 					<div class="box img3"><a href="#"><img src="img/スカイダイビング.jpg"></a></div>
@@ -139,21 +146,27 @@
 </div>
 
 </section>
-<div id="border"></div>
+<div id="border"><div class="half"></div></div>
 <section id="box4">
 			<h1 class="title">Picture</h1>
-		<div class="image">
-			<div class="imagebox"><a href="img/IMG_2911.JPG"><img class="image1" src="img/IMG_2911.JPG" ></a></div>
-			<div class="imagebox"><a href="img/S__9019487.jpg"><img class="image2" src="img/S__9019487.jpg"></a></div>
-			<div class="imagebox"><a href="img/IMG_6164.JPG"><img class="image3" src="img/IMG_6164.JPG"></a></div>
-			<div class="imagebox"><a href="img/IMG_4704.JPG"><img class="image4" src="img/IMG_4704.JPG"></a></div>
-			<div class="imagebox"><a href="img/S__9019496.jpg"><img class="image5" src="img/S__9019496.jpg"></a></div>
-			<div class="imagebox"><a href="img/S__9019483.jpg"><img class="image6" src="img/S__9019483.jpg"></a></div>
-			<div class="imagebox"><a href="img/S__9019503.jpg"><img class="image7" src="img/S__9019503.jpg"></a></div>
-			<div class="imagebox"><a href="img/IMG_2854.JPG"><img class="image8" src="img/IMG_2854.JPG"></a></div>
+		<div class="swiper-container">
+		<div class="image swiper-wrapper">
+			<div class="imagebox swiper-slide"><a href="img/IMG_2911.JPG"><img class="image1" src="img/IMG_2911.JPG" ></a></div>
+			<div class="imagebox swiper-slide"><a href="img/S__9019487.jpg"><img class="image2" src="img/S__9019487.jpg"></a></div>
+			<div class="imagebox swiper-slide"><a href="img/IMG_6164.JPG"><img class="image3" src="img/IMG_6164.JPG"></a></div>
+			<div class="imagebox swiper-slide"><a href="img/IMG_4704.JPG"><img class="image4" src="img/IMG_4704.JPG"></a></div>
+			<div class="imagebox swiper-slide"><a href="img/S__9019496.jpg"><img class="image5" src="img/S__9019496.jpg"></a></div>
+			<div class="imagebox swiper-slide"><a href="img/S__9019483.jpg"><img class="image6" src="img/S__9019483.jpg"></a></div>
+			<div class="imagebox swiper-slide"><a href="img/S__9019503.jpg"><img class="image7" src="img/S__9019503.jpg"></a></div>
+			<div class="imagebox swiper-slide"><a href="img/IMG_2854.JPG"><img class="image8" src="img/IMG_2854.JPG"></a></div>
 		</div>
-
+			<div class="swiper-pagination"></div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-scrollbar"></div>
+		</div>
 </section>
+
 
 <footer>
 	<ul><li><a href="https://twitter.com/yasui_1422297"><i class="fa fa-twitter" aria-hidden="true"></i></li><a>
@@ -174,7 +187,15 @@ $('.particles').particleground({
 	particleRadius: 4
 });
 </script>
-
+<script src="js/swiper.js"></script>
+<script>
+var swiper = new Swiper('.swiper-container', {
+	pagination: '.swiper-pagination',
+	paginationClickable: true,
+	parallax: true,
+	speed: 600,
+});
+</script>
 
 
 </body>
