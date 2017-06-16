@@ -197,18 +197,18 @@ $(function(){
 		},{offset: 300});
 
 
-	$('section#box4').find('.image').hide();
+	$('section#box4').find('.image,.swiper-button-prev,.swiper-button-next,.swiper-scrollbar').hide();
 
 	$('section#box4').waypoint(function(direction){
 
 		if (direction === 'down') {
 
-			$('section#box4').find('.image').fadeIn(fadeSpeed);
+			$('section#box4').find('.image,.swiper-button-prev,.swiper-button-next,.swiper-scrollbar').fadeIn(fadeSpeed);
 
 		}
 		if (direction === 'up') {
 
-			$('section#box4').find('.image').fadeOut(fadeSpeed);
+			$('section#box4').find('.image,.swiper-button-prev,.swiper-button-next,.swiper-scrollbar').fadeOut(fadeSpeed);
 
 		}
 
