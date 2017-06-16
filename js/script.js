@@ -50,6 +50,8 @@ $(function(){
 		$('section#box1').find('h3').hide();
 
 
+
+
 	$(function(){
 		$('section#box1').find('h1,.tiger,h4').fadeIn(5000);
 	});
@@ -63,6 +65,24 @@ $(function(){
 		}
 
 		},{offset: 400});
+
+
+
+	$('section#box2').waypoint(function(direction){
+
+		if (direction === 'down') {
+
+			$('.sideber').animate({'right':'0'});
+
+		}
+
+		if (direction === 'up') {
+
+			$('.sideber').animate({'right':'-100px'});
+
+		}
+
+		},{offset: 300});
 
 	var fadeSpeed = 1000;
 
@@ -177,20 +197,18 @@ $(function(){
 		},{offset: 300});
 
 
-	var fadeSpeed = 1500;
-
-	$('section#box4').find('.imagebox').hide();
+	$('section#box4').find('.image').hide();
 
 	$('section#box4').waypoint(function(direction){
 
 		if (direction === 'down') {
 
-			$('section#box4').find('.imagebox').fadeIn(fadeSpeed);
+			$('section#box4').find('.image').fadeIn(fadeSpeed);
 
 		}
 		if (direction === 'up') {
 
-			$('section#box4').find('.imagebox').fadeOut(fadeSpeed);
+			$('section#box4').find('.image').fadeOut(fadeSpeed);
 
 		}
 

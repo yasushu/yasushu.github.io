@@ -28,13 +28,27 @@ nav{
 	.menu-content
 {
 	width: 25%;
-	height: 200px ;
+	height: 250px ;
 	background: #D36015 ;
 	position: absolute;
 	top: 40px;
 	right:0;
 	background-color: #d24136;
 }
+
+.menu-content li:nth-child(5){
+	width: 50%;
+	position: inline-block;
+	box-sizing: border-box;
+	margin: 25px 0 0 0 ;
+}
+.menu-content li:nth-child(6){
+	width: 50%;
+	position: inline-block;
+	box-sizing: border-box;
+	margin: 25px 0 0 0;
+}
+
 
 nav li{
 	width: 100%;
@@ -84,7 +98,7 @@ nav .menu{
 
 header{
 	width: 100%;
-	height: 30px;
+	height: 40px;
 	overflow: hidden;
 }
 
@@ -167,6 +181,10 @@ header{
 
 .clear{
 	clear: both;
+}
+
+.sideber{
+	display: none;
 }
 
 #box2{
@@ -298,7 +316,7 @@ header{
 	margin-top: -40px;
 	padding-top: 40px;
 	background-color: #8b4513;
-	
+
 
 	}
 

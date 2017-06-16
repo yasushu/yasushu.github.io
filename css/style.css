@@ -84,6 +84,47 @@ nav li a:hover{
 		overflow: hidden;
 	}
 
+.sideber{
+	right: -100px;
+	margin-top: 60px;
+	position: fixed;
+	width: 100px;
+	height: 200px;
+	background-color: #d24136;
+	z-index: 30;
+	box-sizing: border-box;
+}
+
+.sideber i{
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	text-decoration:none;
+	color: white;
+	box-sizing: border-box;
+}
+
+.fa-facebook-official,.fa-twitter{
+	transition: 1s;
+}
+.fa-twitter:hover,.fa-facebook-official:hover{
+	transform: rotate(360deg) scale(1.5);
+    color: #ebb582;
+}
+
+
+
+.sideber .fa{
+	padding:25px 0 0 0 ;
+}
+
+
+
+.sideber a{
+	font-size: 50px;
+}
+
+
  section#box1{
 	background-image: url("../img/チェスキー.jpg");
 	margin-top: -60px;
@@ -139,6 +180,8 @@ nav li a:hover{
 .clear{
 	clear: both;
 }
+
+
 
 #box2{
 	background-image: url("../img/DSC_2006.JPG");
